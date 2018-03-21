@@ -5,7 +5,7 @@ BIN_NAME=prometheus-es-adapter
 VERSION ?= $(shell git describe --tags 2>/dev/null || echo "nil")
 GIT_COMMIT=$(shell git rev-parse HEAD)
 GIT_DIRTY=$(shell test -n "`git status --porcelain`" && echo "+CHANGES" || true)
-IMAGE_NAME := "pwillie/prometheus-es-adapter"
+IMAGE_NAME := "ycyr/prometheus-es-adapter"
 
 default: test
 
